@@ -19,7 +19,7 @@ function App(){
     console.log(_token);
 
     if(_token){
-
+      console.log(_token);
       dispatch({
         type:"SET_TOKEN",
         token: _token,
