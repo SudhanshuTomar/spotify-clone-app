@@ -1,7 +1,56 @@
-,body{
+.body{
     flex: 0.8;
     background: linear-gradient(rgb(91,87,115),black);
     padding: 30px;
     height: 100vh;
+    overflow-y: overlay;
     color: white;
+}
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+.body-info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+.body-info > img{
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+}
+
+.body-info-text{
+    flex: 1;
+}
+.body-info-text > h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.body-info-text{
+    font-size: 14px;
+}
+
+.body-songs{
+    margin: 20px -30px;
+}
+
+.body-icon{
+    display: flex;
+    align-items: center;
+}
+.body-icon > .MuiSvgIcon-root{
+    margin-right: 10px;
+}
+.body-icon-shuffle{
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body-icon-shuffle :hover{
+    transition: 100ms transform ease-in;
+    transform: scale(1.0);
 }
